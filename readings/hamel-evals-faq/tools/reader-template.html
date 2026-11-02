@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evals FAQ · Bộ highlight</title>
+<style>
+:root{--ink:#173842;--muted:#63777b;--paper:#f4f4ee;--line:#d9e0dc;--teal:#126650;--deep:#ffec83;--skim:#bdebd9;--ref:#dfe5f3}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--teal);text-underline-offset:3px}button,input{font:inherit}button,a.button{cursor:pointer;display:inline-block;border:1px solid var(--teal);border-radius:8px;padding:11px 16px;text-decoration:none;font-weight:650;background:var(--teal);color:white}button.secondary,a.button.secondary{background:white;color:var(--teal)}button:disabled{opacity:.5;cursor:wait}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e2ac2e;outline-offset:4px}header{max-width:1100px;margin:auto;padding:48px 32px 32px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:750;color:var(--teal)}h1{font-size:clamp(32px,5vw,56px);line-height:1.12;letter-spacing:-.035em;margin:15px 0}h1 span{font-weight:400;color:var(--muted)}.lead{max-width:760px;font-size:18px;color:var(--muted)}.meta{font-size:13px;color:var(--muted)}.stats{display:flex;gap:9px;flex-wrap:wrap;margin-top:24px}.pill{font-size:13px;border-radius:99px;padding:5px 13px;background:white;border:1px solid var(--line)}.deep{background:var(--deep)}.skim{background:var(--skim)}.reference{background:var(--ref)}main{max-width:1100px;margin:auto;padding:0 32px 48px}.route{background:#e5ede7;border-radius:12px;padding:18px 22px;display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;margin-bottom:28px}.route strong{flex-basis:100%;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.route a{white-space:nowrap}.cards{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{border:1px solid var(--line);border-radius:14px;background:#fff;padding:28px}.num{font-size:12px;font-weight:750;letter-spacing:.1em;color:var(--teal)}h2{font-size:25px;line-height:1.25;margin:10px 0 12px}.card p{margin:10px 0 17px;color:var(--muted);font-size:14px}.steps{padding-left:21px;font-size:14px}.steps li{margin:10px 0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 12px}.drop{margin-top:18px;padding:18px;border:1.5px dashed #a8bbb2;border-radius:9px;background:#f8faf8}.drop label{display:block;font-weight:650;font-size:14px;margin-bottom:9px}.drop input{width:100%;font-size:13px}input::file-selector-button{border:0;border-radius:5px;padding:7px 10px;margin-right:10px;background:#e5ede7;color:var(--ink);cursor:pointer}.status{font-size:13px;white-space:pre-line;min-height:25px;margin-top:13px;color:var(--teal)}.status.error{color:#a13f25}.disclosure{margin-top:26px;padding:19px 22px;border-left:3px solid #7e9d8d;font-size:13px;color:var(--muted);background:#eaf0ea}.disclosure strong{color:var(--ink)}details{font-size:13px;margin-top:20px}summary{cursor:pointer;font-weight:650}code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#f1f4f0;border-radius:4px;padding:2px 4px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f4f0;padding:15px;border-radius:7px;font-size:12px}.preview{margin-top:28px;display:none}.preview-header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px}.preview h2{margin:0;font-size:20px}iframe{width:100%;height:780px;border:1px solid var(--line);background:white;border-radius:10px}.small{font-size:12px;color:var(--muted)}footer{margin-top:30px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:760px){header{padding:32px 20px 24px}main{padding:0 20px 32px}.cards{grid-template-columns:1fr}.card{padding:22px}.route a{white-space:normal}iframe{height:640px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">Reading kit / 02.11.2026</div>
+  <h1>Đọc đúng phần.<br><span>Giữ nguyên bài gốc.</span></h1>
+  <p class="lead">Bộ highlight cho <em>AI Evals: Everything You Need to Know</em> của Hamel Husain và Shreya Shankar. Chọn file gốc để tạo bản đọc đã đánh dấu ngay trong trình duyệt.</p>
+  <div class="meta">Lựa chọn biên tập dành cho kỹ sư làm search, RAG và agent · Không phải ghi chú của tác giả</div>
+  <div class="stats"><span class="pill">61 câu hỏi</span><span class="pill">93 đoạn chọn lọc</span><span class="pill deep">20 đọc kỹ</span><span class="pill skim">31 đọc lướt</span><span class="pill reference">10 tra cứu</span></div>
+</header>
+<main>
+  <nav class="route" aria-label="Lộ trình đọc nhanh"><strong>Bắt đầu với 6 điểm này</strong>__ROUTE_LINKS__</nav>
+  <div class="cards">
+    <section class="card">
+      <div class="num">01 / PDF</div><h2>Áp highlight lên PDF gốc</h2>
+      <p>Giữ nguyên 61 trang, chữ, hình, mục lục và liên kết. Highlight là lớp chú thích PDF; có thể chọn, sửa hoặc xóa trong ứng dụng hỗ trợ.</p>
+      <ol class="steps"><li>Mở PDF chính thức của tác giả rồi lưu về máy.</li><li>Chọn file vừa tải ở bên dưới.</li><li>Bấm tạo bản highlight và mở file kết quả.</li></ol>
+      <a class="button secondary" href="https://hamel.dev/blog/posts/evals-faq/evals-faq.pdf" target="_blank" rel="noopener noreferrer">Mở PDF chính thức ↗</a>
+      <div class="drop"><label for="pdf-file">Chọn PDF gốc</label><input id="pdf-file" type="file" accept="application/pdf,.pdf"></div>
+      <div class="actions"><button id="make-pdf" disabled>Tạo PDF đã highlight</button></div>
+      <div id="pdf-status" class="status" role="status">Xử lý file ngay trên máy. Không tải file của bạn lên máy chủ.</div>
+      <details><summary>Khi PDF đã thay đổi phiên bản</summary><p>Công cụ kiểm tra SHA-256 trước khi áp tọa độ. Nếu tác giả đã cập nhật PDF, công cụ dừng để tránh tô sai chỗ. Dùng cách HTML bên cạnh hoặc cập nhật bộ tọa độ.</p></details>
+    </section>
+    <section class="card">
+      <div class="num">02 / HTML</div><h2>Highlight trên giao diện web</h2>
+      <p>Giữ nguyên cấu trúc bài, hình và liên kết. Mỗi mục có nhãn ưu tiên; dùng thanh công cụ trong bản xem trước để ẩn màu, lưu HTML hoặc in thành PDF.</p>
+      <ol class="steps"><li>Mở trang gốc và lưu dạng HTML, hoặc dùng lệnh bên dưới.</li><li>Chọn file HTML đã lưu.</li><li>Đọc bản xem trước; bấm <strong>Lưu HTML</strong> hoặc <strong>In / lưu PDF</strong>.</li></ol>
+      <a class="button secondary" href="https://hamel.dev/blog/posts/evals-faq/" target="_blank" rel="noopener noreferrer">Mở bài gốc ↗</a>
+      <div class="drop"><label for="html-file">Chọn HTML gốc</label><input id="html-file" type="file" accept="text/html,.html,.htm"></div>
+      <div class="actions"><button id="make-html" disabled>Mở bản highlight</button></div>
+      <div id="html-status" class="status" role="status">CSS và hình gốc có thể cần mạng khi mở file HTML.</div>
+      <details><summary>Lấy HTML bằng một lệnh</summary><pre>curl -L "https://hamel.dev/blog/posts/evals-faq/" -o evals-faq.html</pre><p>Trên Windows cmd có thể dùng <code>curl.exe</code>. Lệnh lấy HTML trực tiếp, thuận tiện hơn bản lưu có tên thư mục tài nguyên khác.</p></details>
+    </section>
+  </div>
+  <div class="disclosure"><strong>Đây là công cụ áp highlight, không chứa toàn văn bài.</strong> Bộ dữ liệu chỉ có vị trí đánh dấu, mức ưu tiên và dấu kiểm tra phiên bản. File gốc do bạn lấy trực tiếp từ tác giả. Chế độ PDF hoạt động ngoại tuyến sau khi có file; chế độ HTML cần truy cập tài nguyên của trang cho đến khi gom đủ CSS, font và hình.</div>
+  <section class="preview" id="preview"><div class="preview-header"><h2>Bản xem trước HTML</h2><button class="secondary" id="close-preview">Đóng xem trước</button></div><iframe id="article-frame" title="Bài gốc với highlight" sandbox="allow-scripts allow-same-origin allow-modals allow-downloads allow-popups"></iframe></section>
+  <footer><span>Nguồn: hamel.dev · Bản tọa độ đối chiếu ngày 02/11/2026</span><span>Vàng: đọc kỹ · Xanh: đọc lướt · Xám tím: tra cứu</span></footer>
+</main>
+<script>__PDF_LIB__</script>
+<script>__DOMPURIFY__</script>
+<script>
+'use strict';
+const HTML_MANIFEST = __HTML_MANIFEST__;
+const PDF_MANIFEST = __PDF_MANIFEST__;
+const OVERLAY_SOURCE = __ANNOTATOR_JS_STRING__;
+const OVERLAY_CSS = __READER_CSS_STRING__;
+const PDF_COLORS = {deep:[1,.82,.12],skim:[.22,.73,.52],reference:[.50,.60,.83]};
+const LABELS = {deep:'Đọc kỹ',skim:'Đọc lướt',reference:'Tra cứu'};
+const byId = id => document.getElementById(id);
+const pdfInput=byId('pdf-file'), htmlInput=byId('html-file');
+pdfInput.addEventListener('change',()=>{byId('make-pdf').disabled=!pdfInput.files.length;setStatus('pdf','Sẵn sàng kiểm tra file và tạo 154 chú thích.');});
+htmlInput.addEventListener('change',()=>{byId('make-html').disabled=!htmlInput.files.length;setStatus('html','Sẵn sàng đối chiếu 61 mục với phiên bản đã chọn.');});
+function setStatus(mode,message,error=false){const e=byId(mode+'-status');e.textContent=message;e.classList.toggle('error',error);}
+function download(bytes,name,type){const url=URL.createObjectURL(new Blob([bytes],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);}
+async function digest(bytes){if(!crypto.subtle)throw new Error('Trình duyệt chưa hỗ trợ SHA-256 trong file này. Hãy mở bằng Chrome/Edge, hoặc chạy công cụ Python đi kèm.');return Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');}
+
+async function annotatePDF(bytes){
+  if(await digest(bytes)!==PDF_MANIFEST.sha256)throw new Error('PDF không khớp phiên bản đã đối chiếu. Chưa áp highlight để tránh tô sai vị trí. Hãy dùng đúng PDF gốc hoặc cập nhật tọa độ.');
+  const {PDFDocument,PDFName,PDFHexString}=PDFLib;
+  const doc=await PDFDocument.load(bytes,{updateMetadata:false});
+  if(doc.getPageCount()!==PDF_MANIFEST.pageCount)throw new Error('Số trang không khớp.');
+  const pages=doc.getPages(),ctx=doc.context;
+  PDF_MANIFEST.entries.forEach((entry,index)=>{
+    const page=pages[entry.page],{width,height}=page.getSize();
+    const expected=PDF_MANIFEST.pageDimensions[entry.page];
+    if(Math.abs(width-expected[0])>.01||Math.abs(height-expected[1])>.01)throw new Error('Kích thước trang không khớp.');
+    const rectangles=entry.rects.map(([x0,y0,x1,y1])=>[x0,height-y1,x1,height-y0]);
+    const box=[Math.min(...rectangles.map(r=>r[0])),Math.min(...rectangles.map(r=>r[1])),Math.max(...rectangles.map(r=>r[2])),Math.max(...rectangles.map(r=>r[3]))];
+    const quads=rectangles.flatMap(([x0,y0,x1,y1])=>[x0,y1,x1,y1,x0,y0,x1,y0]);
+    const color=PDF_COLORS[entry.priority],opacity=entry.kind==='heading'?.20:.30;
+    let paint=`q /GS0 gs ${color.join(' ')} rg\n`;
+    for(const [x0,y0,x1,y1] of rectangles)paint+=`${(x0-box[0]).toFixed(3)} ${(y0-box[1]).toFixed(3)} ${(x1-x0).toFixed(3)} ${(y1-y0).toFixed(3)} re f\n`;
+    paint+='Q';
+    const appearance=ctx.register(ctx.flateStream(paint,{Type:'XObject',Subtype:'Form',BBox:[0,0,box[2]-box[0],box[3]-box[1]],Resources:{ExtGState:{GS0:{Type:'ExtGState',ca:opacity,CA:opacity,BM:'Multiply'}}}}));
+    const label=`#${String(entry.ordinal).padStart(2,'0')} · ${LABELS[entry.priority]}`;
+    const annotation=ctx.obj({Type:'Annot',Subtype:'Highlight',Rect:box,QuadPoints:quads,C:color,F:4,CA:1,T:PDFHexString.fromText('Ghi chú đọc'),Contents:PDFHexString.fromText(label),Subj:PDFHexString.fromText(entry.kind==='heading'?'Mức ưu tiên':'Đoạn nên đọc'),NM:PDFHexString.fromText(`evals-reading-${index}`),AP:{N:appearance}});
+    page.node.addAnnot(ctx.register(annotation));
+  });
+  return doc.save({useObjectStreams:true,addDefaultPage:false});
+}
+byId('make-pdf').addEventListener('click',async()=>{
+  const button=byId('make-pdf');button.disabled=true;setStatus('pdf','Đang kiểm tra phiên bản và áp highlight…');
+  try{const file=pdfInput.files[0];if(!file)throw new Error('Hãy chọn PDF gốc.');const bytes=await annotatePDF(await file.arrayBuffer());download(bytes,'hamel-evals-faq-highlighted.pdf','application/pdf');setStatus('pdf','Đã tạo PDF: 61 trang, 61 tiêu đề ưu tiên và 93 đoạn highlight.');}
+  catch(e){setStatus('pdf',e.message,true);}finally{button.disabled=false;}
+});
+
+function cleanHTML(source){
+  // Parse inertly, then sanitize before anything enters the same-origin preview.
+  const doc=new DOMParser().parseFromString(source,'text/html');
+  // Browser "Webpage, Complete" exports refer to files we have not received.
+  // Reject rather than silently resolving those paths against the publisher.
+  const companionPath=/(?:^|[\/])[^\/?#]+_files[\/]/i;
+  for(const n of doc.querySelectorAll('[href],[src],[srcset],[poster],[style],style')){
+    const values=[...n.attributes].filter(a=>['href','src','srcset','poster','style'].includes(a.name)).map(a=>a.value);
+    if(n.localName==='style')values.push(n.textContent);
+    if(values.some(value=>{try{return companionPath.test(decodeURIComponent(value));}catch(_){return companionPath.test(value);}}))
+      throw new Error('Bản Webpage, Complete cần thư mục *_files đi kèm. Hãy tải HTML nguyên bản bằng lệnh curl bên trên rồi chọn lại file.');
+  }
+  doc.querySelectorAll('iframe').forEach(n=>{
+    const a=doc.createElement('a');a.setAttribute('href',n.getAttribute('src')||'');
+    a.textContent=n.title||'Mở nội dung nhúng';n.replaceWith(a);
+  });
+  doc.querySelectorAll('link.quarto-color-alternate').forEach(n=>n.remove());
+  // DOMPurify handles normalized URLs, SVG namespaces, event handlers and
+  // malformed markup. No regex-only XSS filter and no imported executable code.
+  const safe=DOMPurify.sanitize(doc.documentElement.outerHTML,{
+    WHOLE_DOCUMENT:true, ADD_TAGS:['link'],
+    FORBID_TAGS:['script','base','meta','object','embed','form','iframe'],
+    FORBID_ATTR:['srcdoc'],
+    ALLOWED_URI_REGEXP:/^(?:(?:https?|mailto|tel):|[^a-z]|[a-z+\-.]+(?:[^a-z+\-.:]|$))/i
+  });
+  const clean=new DOMParser().parseFromString(safe,'text/html');
+  const base=clean.createElement('base');base.href=HTML_MANIFEST.sourceUrl;clean.head.prepend(base);
+  const charset=clean.createElement('meta');charset.setAttribute('charset','utf-8');clean.head.prepend(charset);
+  clean.body.classList.remove('quarto-dark');clean.body.classList.add('quarto-light');
+  clean.querySelectorAll('a[href]').forEach(a=>{if(!a.getAttribute('href').startsWith('#')){a.target='_blank';a.rel='noopener noreferrer';}});
+  return '<!doctype html>\n'+clean.documentElement.outerHTML;
+}
+async function openHTML(source){
+  if(source.length>30*1024*1024)throw new Error('File HTML vượt 30 MB. Hãy lấy HTML bằng lệnh curl bên trên.');
+  const cleaned=cleanHTML(source);
+  const frame=byId('article-frame');byId('preview').style.display='block';
+  await new Promise(resolve=>{frame.onload=resolve;frame.srcdoc=cleaned;});
+  const script=frame.contentDocument.createElement('script');script.textContent=OVERLAY_SOURCE;frame.contentDocument.body.appendChild(script);
+  const report=await frame.contentWindow.applyReadingHighlights(HTML_MANIFEST,{cssText:OVERLAY_CSS,sourceUrl:HTML_MANIFEST.sourceUrl,filename:'hamel-evals-faq-highlighted.html'});
+  if(!report.matched)throw new Error('Không có mục nào khớp. Hãy kiểm tra bạn đã chọn HTML của bài Evals FAQ.');
+  return report;
+}
+byId('make-html').addEventListener('click',async()=>{
+  const button=byId('make-html');button.disabled=true;setStatus('html','Đang mở định dạng gốc và kiểm tra nội dung…');
+  try{const file=htmlInput.files[0];if(!file)throw new Error('Hãy chọn HTML gốc.');const report=await openHTML(await file.text());const skipped=report.total-report.matched;setStatus('html',`${report.matched}/${report.total} mục khớp · ${report.highlights} đoạn highlight.`+(skipped?` ${skipped} mục đã thay đổi, chưa đánh dấu.`:' Dùng thanh công cụ trong bản xem trước để lưu.'),!!skipped);byId('preview').scrollIntoView({behavior:'smooth',block:'start'});}
+  catch(e){setStatus('html',e.message,true);}finally{button.disabled=false;}
+});
+byId('close-preview').addEventListener('click',()=>{byId('preview').style.display='none';byId('article-frame').srcdoc='';});
+window.ReadingKit=Object.freeze({annotatePDF,openHTML,HTML_MANIFEST,PDF_MANIFEST});
+</script>
+</body>
+</html>

@@ -1,0 +1,2863 @@
+{
+  "sourceUrl": "https://hamel.dev/blog/posts/evals-faq/evals-faq.pdf",
+  "sha256": "922902b31472c254c74fac91b4e179ebcddb0d9c27d5f96d6b22c5f3a474d413",
+  "pageCount": 61,
+  "pageDimensions": [
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ],
+    [
+      612.0,
+      792.0
+    ]
+  ],
+  "entries": [
+    {
+      "sectionId": "q-what-are-llm-evals",
+      "ordinal": 1,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 3,
+      "rects": [
+        [
+          83.455,
+          100.938,
+          201.608,
+          118.046
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-are-llm-evals",
+      "ordinal": 1,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 3,
+      "rects": [
+        [
+          83.455,
+          431.679,
+          496.113,
+          447.138
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-are-llm-evals",
+      "ordinal": 1,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 3,
+      "rects": [
+        [
+          115.025,
+          458.777,
+          527.085,
+          474.236
+        ],
+        [
+          83.455,
+          472.327,
+          254.114,
+          487.786
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-is-a-trace",
+      "ordinal": 2,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 4,
+      "rects": [
+        [
+          83.455,
+          499.035,
+          186.281,
+          516.143
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-is-a-trace",
+      "ordinal": 2,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 4,
+      "rects": [
+        [
+          83.051,
+          527.674,
+          528.543,
+          543.133
+        ],
+        [
+          83.455,
+          541.223,
+          360.112,
+          556.682
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-a-minimum-viable-evaluation-setup",
+      "ordinal": 3,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 5,
+      "rects": [
+        [
+          83.455,
+          440.044,
+          334.944,
+          457.152
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-a-minimum-viable-evaluation-setup",
+      "ordinal": 3,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 5,
+      "rects": [
+        [
+          83.455,
+          468.683,
+          287.833,
+          484.142
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-of-my-development-budget-should-i-allocate-to-evals",
+      "ordinal": 4,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 6,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          451.949,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-of-my-development-budget-should-i-allocate-to-evals",
+      "ordinal": 4,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 6,
+      "rects": [
+        [
+          83.062,
+          179.336,
+          471.785,
+          194.795
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-will-these-evaluation-methods-still-be-relevant-in-5-10-years-given-how-fast-ai-is-changing",
+      "ordinal": 5,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 6,
+      "rects": [
+        [
+          83.455,
+          383.442,
+          523.764,
+          400.55
+        ],
+        [
+          83.455,
+          397.389,
+          161.51,
+          414.497
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-will-these-evaluation-methods-still-be-relevant-in-5-10-years-given-how-fast-ai-is-changing",
+      "ordinal": 5,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 6,
+      "rects": [
+        [
+          110.68,
+          426.028,
+          527.575,
+          441.487
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-make-the-case-for-investing-in-evaluations-to-my-team",
+      "ordinal": 6,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 7,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          453.587,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-make-the-case-for-investing-in-evaluations-to-my-team",
+      "ordinal": 6,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 7,
+      "rects": [
+        [
+          83.455,
+          98.04,
+          528.539,
+          113.499
+        ],
+        [
+          83.455,
+          111.59,
+          104.673,
+          127.049
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-is-error-analysis-so-important-in-llm-evals-and-how-is-it-performed",
+      "ordinal": 7,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 7,
+      "rects": [
+        [
+          83.455,
+          507.412,
+          502.005,
+          524.52
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-is-error-analysis-so-important-in-llm-evals-and-how-is-it-performed",
+      "ordinal": 7,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 7,
+      "rects": [
+        [
+          376.88,
+          536.05,
+          528.545,
+          551.509
+        ],
+        [
+          83.062,
+          549.599,
+          259.874,
+          565.058
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-is-error-analysis-so-important-in-llm-evals-and-how-is-it-performed",
+      "ordinal": 7,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 8,
+      "rects": [
+        [
+          463.618,
+          228.768,
+          528.757,
+          244.227
+        ],
+        [
+          83.455,
+          242.317,
+          232.336,
+          257.776
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-is-error-analysis-so-important-in-llm-evals-and-how-is-it-performed",
+      "ordinal": 7,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 8,
+      "rects": [
+        [
+          127.091,
+          359.495,
+          445.375,
+          374.954
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-do-i-need-a-reference-answer-before-annotating-data",
+      "ordinal": 8,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 10,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          441.907,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-do-i-need-a-reference-answer-before-annotating-data",
+      "ordinal": 8,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 10,
+      "rects": [
+        [
+          83.455,
+          212.412,
+          528.546,
+          227.871
+        ],
+        [
+          83.455,
+          225.961,
+          112.243,
+          241.42
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-do-i-need-a-reference-answer-before-annotating-data",
+      "ordinal": 8,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 10,
+      "rects": [
+        [
+          174.595,
+          239.51,
+          527.705,
+          254.969
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-record-problems-that-arent-the-models-fault",
+      "ordinal": 9,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 10,
+      "rects": [
+        [
+          83.455,
+          450.391,
+          398.247,
+          467.499
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-record-problems-that-arent-the-models-fault",
+      "ordinal": 9,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 10,
+      "rects": [
+        [
+          108.477,
+          479.029,
+          527.575,
+          494.488
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-examples-do-i-need-for-an-eval",
+      "ordinal": 10,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 11,
+      "rects": [
+        [
+          83.455,
+          105.405,
+          331.608,
+          122.513
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-examples-do-i-need-for-an-eval",
+      "ordinal": 10,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 11,
+      "rects": [
+        [
+          83.455,
+          134.044,
+          437.559,
+          149.503
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-examples-do-i-need-for-an-eval",
+      "ordinal": 10,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 12,
+      "rects": [
+        [
+          244.967,
+          338.615,
+          528.833,
+          354.074
+        ],
+        [
+          83.455,
+          352.164,
+          279.426,
+          367.623
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-examples-do-i-need-for-an-eval",
+      "ordinal": 10,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 13,
+      "rects": [
+        [
+          386.135,
+          248.813,
+          528.541,
+          264.272
+        ],
+        [
+          83.455,
+          262.363,
+          100.814,
+          277.822
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-surface-problematic-traces-for-review-beyond-user-feedback",
+      "ordinal": 11,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 13,
+      "rects": [
+        [
+          83.455,
+          344.526,
+          479.793,
+          361.634
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-surface-problematic-traces-for-review-beyond-user-feedback",
+      "ordinal": 11,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 14,
+      "rects": [
+        [
+          251.892,
+          111.59,
+          528.957,
+          127.049
+        ],
+        [
+          83.455,
+          125.139,
+          401.302,
+          140.598
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-often-should-i-re-run-error-analysis-on-my-production-system",
+      "ordinal": 12,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 14,
+      "rects": [
+        [
+          83.455,
+          180.204,
+          461.525,
+          197.312
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-often-should-i-re-run-error-analysis-on-my-production-system",
+      "ordinal": 12,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 14,
+      "rects": [
+        [
+          165.369,
+          324.011,
+          487.443,
+          339.47
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-i-do-when-my-gold-eval-dataset-becomes-stale",
+      "ordinal": 13,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 14,
+      "rects": [
+        [
+          83.455,
+          392.625,
+          441.417,
+          409.733
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-i-do-when-my-gold-eval-dataset-becomes-stale",
+      "ordinal": 13,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 14,
+      "rects": [
+        [
+          83.051,
+          543.206,
+          527.574,
+          558.665
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-is-the-best-approach-for-generating-synthetic-data",
+      "ordinal": 14,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 15,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          409.58,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-is-the-best-approach-for-generating-synthetic-data",
+      "ordinal": 14,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 15,
+      "rects": [
+        [
+          83.455,
+          235.542,
+          412.88,
+          251.001
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-is-the-best-approach-for-generating-synthetic-data",
+      "ordinal": 14,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 15,
+      "rects": [
+        [
+          83.455,
+          467.026,
+          237.319,
+          482.604
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-are-there-scenarios-where-synthetic-data-may-not-be-reliable",
+      "ordinal": 15,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 16,
+      "rects": [
+        [
+          83.455,
+          376.667,
+          434.59,
+          393.775
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-are-there-scenarios-where-synthetic-data-may-not-be-reliable",
+      "ordinal": 15,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 16,
+      "rects": [
+        [
+          108.321,
+          405.306,
+          313.085,
+          420.765
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-can-i-do-error-analysis-when-production-traces-contain-sensitive-data",
+      "ordinal": 16,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 17,
+      "rects": [
+        [
+          83.455,
+          155.816,
+          398.617,
+          172.924
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-can-i-do-error-analysis-when-production-traces-contain-sensitive-data",
+      "ordinal": 16,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 17,
+      "rects": [
+        [
+          383.965,
+          458.427,
+          528.549,
+          473.886
+        ],
+        [
+          110.727,
+          471.977,
+          272.574,
+          487.436
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-approach-evaluation-when-my-system-handles-diverse-user-queries",
+      "ordinal": 17,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 18,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          516.531,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-approach-evaluation-when-my-system-handles-diverse-user-queries",
+      "ordinal": 17,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 18,
+      "rects": [
+        [
+          401.951,
+          263.284,
+          528.546,
+          278.743
+        ],
+        [
+          83.455,
+          276.833,
+          372.095,
+          292.292
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-can-i-efficiently-sample-production-traces-for-review",
+      "ordinal": 18,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 18,
+      "rects": [
+        [
+          83.455,
+          365.454,
+          413.382,
+          382.562
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-can-i-efficiently-sample-production-traces-for-review",
+      "ordinal": 18,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 19,
+      "rects": [
+        [
+          83.455,
+          104.537,
+          279.759,
+          119.996
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-can-i-efficiently-sample-production-traces-for-review",
+      "ordinal": 18,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 19,
+      "rects": [
+        [
+          83.455,
+          181.067,
+          287.662,
+          196.526
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-do-you-recommend-binary-passfail-evaluations-instead-of-1-5-ratings-likert-scales",
+      "ordinal": 19,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 19,
+      "rects": [
+        [
+          83.455,
+          539.049,
+          518.91,
+          556.157
+        ],
+        [
+          88.572,
+          552.996,
+          155.712,
+          570.104
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-do-you-recommend-binary-passfail-evaluations-instead-of-1-5-ratings-likert-scales",
+      "ordinal": 19,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 20,
+      "rects": [
+        [
+          83.455,
+          70.664,
+          414.205,
+          86.123
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-why-do-you-recommend-binary-passfail-evaluations-instead-of-1-5-ratings-likert-scales",
+      "ordinal": 19,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 20,
+      "rects": [
+        [
+          253.098,
+          179.057,
+          528.55,
+          194.516
+        ],
+        [
+          83.455,
+          192.607,
+          272.331,
+          208.066
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-combine-my-evals-into-a-single-metric",
+      "ordinal": 20,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 20,
+      "rects": [
+        [
+          83.455,
+          308.643,
+          363.158,
+          325.751
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-combine-my-evals-into-a-single-metric",
+      "ordinal": 20,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 20,
+      "rects": [
+        [
+          332.065,
+          384.704,
+          528.952,
+          400.163
+        ],
+        [
+          83.455,
+          398.253,
+          109.715,
+          413.712
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-combine-my-evals-into-a-single-metric",
+      "ordinal": 20,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 20,
+      "rects": [
+        [
+          498.777,
+          506.647,
+          528.832,
+          522.106
+        ],
+        [
+          83.455,
+          520.196,
+          527.663,
+          535.655
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-does-a-good-eval-dashboard-look-like",
+      "ordinal": 21,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 21,
+      "rects": [
+        [
+          83.455,
+          193.475,
+          499.256,
+          210.583
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-does-a-good-eval-dashboard-look-like",
+      "ordinal": 21,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 21,
+      "rects": [
+        [
+          376.873,
+          235.663,
+          528.543,
+          251.122
+        ],
+        [
+          83.455,
+          249.212,
+          438.731,
+          264.671
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-practice-eval-driven-development",
+      "ordinal": 22,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 21,
+      "rects": [
+        [
+          83.455,
+          432.994,
+          330.389,
+          450.102
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-practice-eval-driven-development",
+      "ordinal": 22,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 21,
+      "rects": [
+        [
+          319.724,
+          522.604,
+          528.834,
+          538.063
+        ],
+        [
+          83.455,
+          536.153,
+          170.19,
+          551.612
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-practice-eval-driven-development",
+      "ordinal": 22,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 21,
+      "rects": [
+        [
+          145.108,
+          570.026,
+          528.944,
+          585.485
+        ],
+        [
+          83.062,
+          583.575,
+          193.258,
+          599.034
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-build-automated-evaluators-for-every-failure-mode-i-find",
+      "ordinal": 23,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 22,
+      "rects": [
+        [
+          83.455,
+          152.827,
+          457.209,
+          169.935
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-build-automated-evaluators-for-every-failure-mode-i-find",
+      "ordinal": 23,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 22,
+      "rects": [
+        [
+          83.455,
+          316.958,
+          426.166,
+          332.417
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-build-automated-evaluators-for-every-failure-mode-i-find",
+      "ordinal": 23,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 22,
+      "rects": [
+        [
+          162.456,
+          344.056,
+          528.543,
+          359.515
+        ],
+        [
+          83.171,
+          357.605,
+          218.197,
+          373.064
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-model-or-llm-should-i-use-to-build-automated-evals",
+      "ordinal": 24,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 22,
+      "rects": [
+        [
+          83.455,
+          426.22,
+          423.938,
+          443.328
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-model-or-llm-should-i-use-to-build-automated-evals",
+      "ordinal": 24,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 22,
+      "rects": [
+        [
+          83.455,
+          454.858,
+          414.536,
+          470.317
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-model-or-llm-should-i-use-to-build-automated-evals",
+      "ordinal": 24,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 23,
+      "rects": [
+        [
+          351.511,
+          192.607,
+          528.546,
+          208.066
+        ],
+        [
+          83.455,
+          206.156,
+          181.386,
+          221.615
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-use-jev-for-evals",
+      "ordinal": 25,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 23,
+      "rects": [
+        [
+          83.455,
+          261.221,
+          225.566,
+          278.329
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-use-jev-for-evals",
+      "ordinal": 25,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 24,
+      "rects": [
+        [
+          83.455,
+          571.144,
+          266.943,
+          586.603
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-know-if-i-can-trust-my-automated-eval",
+      "ordinal": 26,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 25,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          367.02,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-know-if-i-can-trust-my-automated-eval",
+      "ordinal": 26,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 25,
+      "rects": [
+        [
+          110.727,
+          277.104,
+          427.414,
+          292.682
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-know-if-i-can-trust-my-automated-eval",
+      "ordinal": 26,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 25,
+      "rects": [
+        [
+          117.415,
+          476.621,
+          283.517,
+          492.08
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-know-if-i-can-trust-my-automated-eval",
+      "ordinal": 26,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 25,
+      "rects": [
+        [
+          83.062,
+          604.541,
+          267.535,
+          620.0
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-i-do-when-i-cant-get-my-llm-judge-to-agree-with-human-reviewers",
+      "ordinal": 27,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 26,
+      "rects": [
+        [
+          83.455,
+          583.595,
+          494.522,
+          600.703
+        ],
+        [
+          83.455,
+          597.542,
+          133.284,
+          614.65
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-i-do-when-i-cant-get-my-llm-judge-to-agree-with-human-reviewers",
+      "ordinal": 27,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 27,
+      "rects": [
+        [
+          83.455,
+          165.508,
+          465.866,
+          180.967
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-i-do-when-i-cant-get-my-llm-judge-to-agree-with-human-reviewers",
+      "ordinal": 27,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 27,
+      "rects": [
+        [
+          246.47,
+          240.029,
+          528.546,
+          255.488
+        ],
+        [
+          83.455,
+          253.578,
+          114.1,
+          269.037
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-use-ready-to-use-evaluation-metrics",
+      "ordinal": 28,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 27,
+      "rects": [
+        [
+          83.455,
+          396.713,
+          357.3,
+          413.821
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-use-ready-to-use-evaluation-metrics",
+      "ordinal": 28,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 27,
+      "rects": [
+        [
+          106.558,
+          425.286,
+          528.539,
+          440.864
+        ],
+        [
+          83.455,
+          438.836,
+          190.757,
+          454.414
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-use-ready-to-use-evaluation-metrics",
+      "ordinal": 28,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 27,
+      "rects": [
+        [
+          246.065,
+          438.901,
+          456.578,
+          454.36
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-are-similarity-metrics-bertscore-rouge-etc-useful-for-evaluating-llm-outputs",
+      "ordinal": 29,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 28,
+      "rects": [
+        [
+          83.455,
+          105.405,
+          521.863,
+          122.513
+        ],
+        [
+          83.455,
+          119.353,
+          124.856,
+          136.461
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-are-similarity-metrics-bertscore-rouge-etc-useful-for-evaluating-llm-outputs",
+      "ordinal": 29,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 28,
+      "rects": [
+        [
+          83.455,
+          309.785,
+          271.899,
+          325.244
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-are-similarity-metrics-bertscore-rouge-etc-useful-for-evaluating-llm-outputs",
+      "ordinal": 29,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 28,
+      "rects": [
+        [
+          279.81,
+          309.785,
+          526.683,
+          325.244
+        ],
+        [
+          83.455,
+          323.334,
+          133.667,
+          338.793
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-use-the-same-model-for-both-the-main-task-and-evaluation",
+      "ordinal": 30,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 28,
+      "rects": [
+        [
+          83.455,
+          419.046,
+          457.162,
+          436.154
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-use-the-same-model-for-both-the-main-task-and-evaluation",
+      "ordinal": 30,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 28,
+      "rects": [
+        [
+          275.553,
+          474.783,
+          528.544,
+          490.242
+        ],
+        [
+          83.062,
+          488.333,
+          195.47,
+          503.792
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-of-a-trace-should-i-give-an-llm-judge",
+      "ordinal": 31,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 29,
+      "rects": [
+        [
+          83.455,
+          105.405,
+          353.044,
+          122.513
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-of-a-trace-should-i-give-an-llm-judge",
+      "ordinal": 31,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 29,
+      "rects": [
+        [
+          83.455,
+          134.044,
+          433.552,
+          149.503
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-of-a-trace-should-i-give-an-llm-judge",
+      "ordinal": 31,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 29,
+      "rects": [
+        [
+          83.455,
+          228.888,
+          462.294,
+          244.347
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-we-evaluate-a-models-ability-to-express-uncertainty-or-know-what-it-doesnt-know",
+      "ordinal": 32,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 29,
+      "rects": [
+        [
+          83.455,
+          372.023,
+          527.984,
+          389.131
+        ],
+        [
+          83.455,
+          385.97,
+          155.999,
+          403.078
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-we-evaluate-a-models-ability-to-express-uncertainty-or-know-what-it-doesnt-know",
+      "ordinal": 32,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 29,
+      "rects": [
+        [
+          440.37,
+          428.158,
+          528.541,
+          443.617
+        ],
+        [
+          83.455,
+          441.707,
+          528.542,
+          457.166
+        ],
+        [
+          83.455,
+          455.257,
+          152.324,
+          470.716
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-people-should-annotate-my-llm-outputs",
+      "ordinal": 33,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 30,
+      "rects": [
+        [
+          83.455,
+          236.946,
+          387.702,
+          254.054
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-many-people-should-annotate-my-llm-outputs",
+      "ordinal": 33,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 30,
+      "rects": [
+        [
+          83.455,
+          504.706,
+          480.064,
+          520.165
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-if-human-reviewers-approve-ai-outputs-without-checking-them-carefully",
+      "ordinal": 34,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 31,
+      "rects": [
+        [
+          83.455,
+          105.405,
+          413.203,
+          122.513
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-if-human-reviewers-approve-ai-outputs-without-checking-them-carefully",
+      "ordinal": 34,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 31,
+      "rects": [
+        [
+          235.177,
+          174.691,
+          507.546,
+          190.15
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-product-managers-and-engineers-collaborate-on-error-analysis-how",
+      "ordinal": 35,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 32,
+      "rects": [
+        [
+          83.455,
+          341.719,
+          514.14,
+          358.827
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-product-managers-and-engineers-collaborate-on-error-analysis-how",
+      "ordinal": 35,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 32,
+      "rects": [
+        [
+          308.015,
+          431.329,
+          528.546,
+          446.788
+        ],
+        [
+          83.455,
+          444.878,
+          310.45,
+          460.337
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-help-with-evals-if-im-not-a-domain-expert",
+      "ordinal": 36,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 32,
+      "rects": [
+        [
+          83.455,
+          554.14,
+          366.446,
+          571.248
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-i-help-with-evals-if-im-not-a-domain-expert",
+      "ordinal": 36,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 33,
+      "rects": [
+        [
+          121.444,
+          256.567,
+          527.578,
+          272.026
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-outputs-in-a-language-i-dont-speak",
+      "ordinal": 37,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 33,
+      "rects": [
+        [
+          83.455,
+          325.181,
+          401.068,
+          342.289
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-outputs-in-a-language-i-dont-speak",
+      "ordinal": 37,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 33,
+      "rects": [
+        [
+          300.789,
+          428.34,
+          528.539,
+          443.799
+        ],
+        [
+          83.455,
+          441.889,
+          312.373,
+          457.348
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-outsource-annotation-and-labeling-to-a-third-party",
+      "ordinal": 38,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 33,
+      "rects": [
+        [
+          83.455,
+          557.926,
+          415.677,
+          575.034
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-outsource-annotation-and-labeling-to-a-third-party",
+      "ordinal": 38,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 34,
+      "rects": [
+        [
+          239.317,
+          98.04,
+          528.538,
+          113.499
+        ],
+        [
+          83.455,
+          111.59,
+          310.004,
+          127.049
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-if-the-source-material-is-too-large-for-a-person-to-review",
+      "ordinal": 39,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 35,
+      "rects": [
+        [
+          83.455,
+          445.348,
+          351.406,
+          462.456
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-if-the-source-material-is-too-large-for-a-person-to-review",
+      "ordinal": 39,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 35,
+      "rects": [
+        [
+          83.051,
+          487.536,
+          362.15,
+          502.995
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-if-the-source-material-is-too-large-for-a-person-to-review",
+      "ordinal": 39,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 35,
+      "rects": [
+        [
+          154.475,
+          582.38,
+          528.539,
+          597.839
+        ],
+        [
+          83.455,
+          595.929,
+          230.893,
+          611.388
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-parts-of-evals-can-be-automated-with-llms",
+      "ordinal": 40,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 36,
+      "rects": [
+        [
+          83.455,
+          139.278,
+          375.137,
+          156.386
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-parts-of-evals-can-be-automated-with-llms",
+      "ordinal": 40,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 37,
+      "rects": [
+        [
+          250.547,
+          151.959,
+          528.54,
+          167.418
+        ],
+        [
+          110.727,
+          165.508,
+          284.579,
+          180.967
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-parts-of-evals-can-be-automated-with-llms",
+      "ordinal": 40,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 37,
+      "rects": [
+        [
+          83.455,
+          270.116,
+          412.135,
+          285.575
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-stop-writing-prompts-manually-in-favor-of-automated-tools",
+      "ordinal": 41,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 37,
+      "rects": [
+        [
+          83.455,
+          325.181,
+          471.771,
+          342.289
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-stop-writing-prompts-manually-in-favor-of-automated-tools",
+      "ordinal": 41,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 37,
+      "rects": [
+        [
+          123.669,
+          441.889,
+          528.768,
+          457.348
+        ],
+        [
+          82.745,
+          455.439,
+          126.94,
+          470.898
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-build-a-custom-annotation-tool-or-use-something-off-the-shelf",
+      "ordinal": 42,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 38,
+      "rects": [
+        [
+          83.455,
+          100.938,
+          487.827,
+          118.046
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-should-i-build-a-custom-annotation-tool-or-use-something-off-the-shelf",
+      "ordinal": 42,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 38,
+      "rects": [
+        [
+          110.335,
+          213.861,
+          410.302,
+          229.32
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-makes-a-good-custom-interface-for-reviewing-llm-outputs",
+      "ordinal": 43,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 38,
+      "rects": [
+        [
+          83.455,
+          407.407,
+          457.305,
+          424.515
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-makes-a-good-custom-interface-for-reviewing-llm-outputs",
+      "ordinal": 43,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 42,
+      "rects": [
+        [
+          278.543,
+          391.273,
+          528.838,
+          406.732
+        ],
+        [
+          83.455,
+          404.823,
+          409.921,
+          420.282
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-gaps-in-eval-tooling-should-i-be-prepared-to-fill-myself",
+      "ordinal": 44,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 42,
+      "rects": [
+        [
+          83.455,
+          459.888,
+          430.86,
+          476.996
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-gaps-in-eval-tooling-should-i-be-prepared-to-fill-myself",
+      "ordinal": 44,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 43,
+      "rects": [
+        [
+          269.979,
+          544.141,
+          515.728,
+          559.6
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-an-internal-eval-platform-standardize-across-teams",
+      "ordinal": 45,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 44,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          449.988,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-an-internal-eval-platform-standardize-across-teams",
+      "ordinal": 45,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 44,
+      "rects": [
+        [
+          243.559,
+          172.561,
+          528.553,
+          188.02
+        ],
+        [
+          83.455,
+          186.11,
+          270.92,
+          201.569
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-your-favorite-eval-vendor",
+      "ordinal": 46,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 44,
+      "rects": [
+        [
+          83.455,
+          437.639,
+          279.317,
+          454.747
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-your-favorite-eval-vendor",
+      "ordinal": 46,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 44,
+      "rects": [
+        [
+          83.455,
+          561.121,
+          199.462,
+          576.58
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-version-and-manage-prompts",
+      "ordinal": 47,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 45,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          334.896,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-version-and-manage-prompts",
+      "ordinal": 47,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 45,
+      "rects": [
+        [
+          124.198,
+          145.463,
+          456.226,
+          160.922
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-go-in-the-system-prompt-vs-the-user-prompt",
+      "ordinal": 48,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 45,
+      "rects": [
+        [
+          83.455,
+          559.581,
+          420.997,
+          576.689
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-what-should-go-in-the-system-prompt-vs-the-user-prompt",
+      "ordinal": 48,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 45,
+      "rects": [
+        [
+          271.407,
+          588.22,
+          528.77,
+          603.679
+        ],
+        [
+          83.455,
+          601.769,
+          216.593,
+          617.228
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-are-evaluations-used-differently-in-cicd-vs-monitoring-production",
+      "ordinal": 49,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 46,
+      "rects": [
+        [
+          83.455,
+          291.143,
+          499.387,
+          308.251
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-are-evaluations-used-differently-in-cicd-vs-monitoring-production",
+      "ordinal": 49,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 46,
+      "rects": [
+        [
+          83.455,
+          319.782,
+          374.861,
+          335.241
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-are-evaluations-used-differently-in-cicd-vs-monitoring-production",
+      "ordinal": 49,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 47,
+      "rects": [
+        [
+          236.602,
+          111.59,
+          454.462,
+          127.049
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-often-should-i-run-my-evals",
+      "ordinal": 50,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 47,
+      "rects": [
+        [
+          83.455,
+          200.528,
+          279.579,
+          217.636
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-often-should-i-run-my-evals",
+      "ordinal": 50,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 47,
+      "rects": [
+        [
+          83.062,
+          438.382,
+          220.911,
+          453.841
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-often-should-i-run-my-evals",
+      "ordinal": 50,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 47,
+      "rects": [
+        [
+          228.715,
+          438.382,
+          528.542,
+          453.841
+        ],
+        [
+          83.455,
+          451.931,
+          127.735,
+          467.39
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-the-difference-between-guardrails-evaluators",
+      "ordinal": 51,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 50,
+      "rects": [
+        [
+          83.455,
+          207.302,
+          398.868,
+          224.41
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-the-difference-between-guardrails-evaluators",
+      "ordinal": 51,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 50,
+      "rects": [
+        [
+          83.455,
+          235.876,
+          494.164,
+          251.454
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-whats-the-difference-between-guardrails-evaluators",
+      "ordinal": 51,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 50,
+      "rects": [
+        [
+          83.455,
+          458.705,
+          338.401,
+          474.164
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-my-evaluators-also-be-used-to-automatically-fix-or-correct-outputs-in-production",
+      "ordinal": 52,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 51,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          503.787,
+          86.51
+        ],
+        [
+          83.455,
+          83.35,
+          141.617,
+          100.458
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-can-my-evaluators-also-be-used-to-automatically-fix-or-correct-outputs-in-production",
+      "ordinal": 52,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 51,
+      "rects": [
+        [
+          203.745,
+          263.221,
+          528.546,
+          278.68
+        ],
+        [
+          110.727,
+          276.77,
+          337.952,
+          292.229
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-time-should-i-spend-on-model-selection",
+      "ordinal": 53,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 51,
+      "rects": [
+        [
+          83.455,
+          470.316,
+          378.891,
+          487.424
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-much-time-should-i-spend-on-model-selection",
+      "ordinal": 53,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 51,
+      "rects": [
+        [
+          83.455,
+          512.504,
+          527.682,
+          527.963
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-is-rag-dead",
+      "ordinal": 54,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 52,
+      "rects": [
+        [
+          83.455,
+          100.938,
+          170.13,
+          118.046
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-is-rag-dead",
+      "ordinal": 54,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 52,
+      "rects": [
+        [
+          332.147,
+          304.919,
+          527.096,
+          320.378
+        ],
+        [
+          83.455,
+          318.469,
+          226.222,
+          333.928
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-evaluate-a-coding-agent",
+      "ordinal": 55,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 53,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          308.631,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-evaluate-a-coding-agent",
+      "ordinal": 55,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 53,
+      "rects": [
+        [
+          212.717,
+          206.434,
+          528.839,
+          221.893
+        ],
+        [
+          83.455,
+          219.983,
+          336.186,
+          235.442
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-approach-evaluating-my-rag-system",
+      "ordinal": 56,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 53,
+      "rects": [
+        [
+          83.455,
+          559.581,
+          379.082,
+          576.689
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-approach-evaluating-my-rag-system",
+      "ordinal": 56,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 53,
+      "rects": [
+        [
+          83.455,
+          588.22,
+          526.977,
+          603.679
+        ],
+        [
+          83.455,
+          601.769,
+          197.193,
+          617.228
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-approach-evaluating-my-rag-system",
+      "ordinal": 56,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 54,
+      "rects": [
+        [
+          83.062,
+          98.04,
+          290.006,
+          113.499
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-should-i-approach-evaluating-my-rag-system",
+      "ordinal": 56,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 54,
+      "rects": [
+        [
+          230.412,
+          289.739,
+          528.764,
+          305.198
+        ],
+        [
+          83.455,
+          303.288,
+          190.268,
+          318.747
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-choose-the-right-chunk-size-for-my-document-processing-tasks",
+      "ordinal": 57,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 55,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          497.08,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-choose-the-right-chunk-size-for-my-document-processing-tasks",
+      "ordinal": 57,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 55,
+      "rects": [
+        [
+          83.455,
+          98.04,
+          528.539,
+          113.499
+        ],
+        [
+          83.062,
+          111.59,
+          176.137,
+          127.049
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-choose-the-right-chunk-size-for-my-document-processing-tasks",
+      "ordinal": 57,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 56,
+      "rects": [
+        [
+          498.622,
+          213.209,
+          528.84,
+          228.668
+        ],
+        [
+          83.455,
+          226.758,
+          272.139,
+          242.217
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-debug-multi-turn-conversation-traces",
+      "ordinal": 58,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 56,
+      "rects": [
+        [
+          83.455,
+          281.823,
+          357.766,
+          298.931
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-debug-multi-turn-conversation-traces",
+      "ordinal": 58,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 56,
+      "rects": [
+        [
+          150.478,
+          310.461,
+          527.604,
+          325.92
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-debug-multi-turn-conversation-traces",
+      "ordinal": 58,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 56,
+      "rects": [
+        [
+          83.051,
+          504.17,
+          326.071,
+          519.629
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-debug-multi-turn-conversation-traces",
+      "ordinal": 58,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 57,
+      "rects": [
+        [
+          202.778,
+          98.04,
+          431.922,
+          113.499
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-sessions-with-human-handoffs",
+      "ordinal": 59,
+      "priority": "reference",
+      "kind": "heading",
+      "page": 57,
+      "rects": [
+        [
+          83.455,
+          378.677,
+          367.462,
+          395.785
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-sessions-with-human-handoffs",
+      "ordinal": 59,
+      "priority": "reference",
+      "kind": "highlight",
+      "page": 57,
+      "rects": [
+        [
+          480.32,
+          407.316,
+          528.546,
+          422.775
+        ],
+        [
+          83.455,
+          420.865,
+          528.546,
+          436.324
+        ],
+        [
+          83.455,
+          434.414,
+          116.536,
+          449.873
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-complex-multi-step-workflows",
+      "ordinal": 60,
+      "priority": "skim",
+      "kind": "heading",
+      "page": 58,
+      "rects": [
+        [
+          83.455,
+          69.402,
+          366.912,
+          86.51
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-complex-multi-step-workflows",
+      "ordinal": 60,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 58,
+      "rects": [
+        [
+          83.455,
+          145.463,
+          267.027,
+          160.922
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-complex-multi-step-workflows",
+      "ordinal": 60,
+      "priority": "skim",
+      "kind": "highlight",
+      "page": 58,
+      "rects": [
+        [
+          83.455,
+          233.532,
+          466.211,
+          248.991
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-agentic-workflows",
+      "ordinal": 61,
+      "priority": "deep",
+      "kind": "heading",
+      "page": 58,
+      "rects": [
+        [
+          83.455,
+          336.02,
+          302.187,
+          353.128
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-agentic-workflows",
+      "ordinal": 61,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 58,
+      "rects": [
+        [
+          100.424,
+          384.917,
+          234.875,
+          400.495
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-agentic-workflows",
+      "ordinal": 61,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 59,
+      "rects": [
+        [
+          83.062,
+          98.04,
+          471.838,
+          113.499
+        ]
+      ]
+    },
+    {
+      "sectionId": "q-how-do-i-evaluate-agentic-workflows",
+      "ordinal": 61,
+      "priority": "deep",
+      "kind": "highlight",
+      "page": 59,
+      "rects": [
+        [
+          83.051,
+          159.012,
+          282.69,
+          174.471
+        ]
+      ]
+    }
+  ]
+}

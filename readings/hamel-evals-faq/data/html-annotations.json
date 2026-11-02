@@ -1,0 +1,883 @@
+{
+  "schemaVersion": 1,
+  "sourceUrl": "https://hamel.dev/blog/posts/evals-faq/",
+  "sourcePdfUrl": "https://hamel.dev/blog/posts/evals-faq/evals-faq.pdf",
+  "snapshotDate": "2026-11-02",
+  "authors": [
+    "Hamel Husain",
+    "Shreya Shankar"
+  ],
+  "sourceTitle": "AI Evals: Everything You Need to Know",
+  "sourceModified": "2026-09-21",
+  "normalization": "textContent of section; exclude script,style,noscript,template,.anchorjs-link,.anchor-section,.quarto-appendix-citeas,.reader-owned; collapse whitespace and trim; UTF-16 code-unit offsets; SHA-256 of normalized UTF-8 text",
+  "quickRoute": [
+    7,
+    10,
+    26,
+    56,
+    61,
+    49
+  ],
+  "sections": [
+    {
+      "id": "q-what-are-llm-evals",
+      "ordinal": 1,
+      "priority": "deep",
+      "sha256": "173eb28921cb9158607c0e7ca1c8565906c6984afd892af8198fe2643874c597",
+      "ranges": [
+        {
+          "start": 1158,
+          "end": 1241
+        },
+        {
+          "start": 1342,
+          "end": 1467
+        }
+      ]
+    },
+    {
+      "id": "q-what-is-a-trace",
+      "ordinal": 2,
+      "priority": "skim",
+      "sha256": "9631853b4e885dc260e30c9a58db1ca3e0063ee99c776dda9f11f1b0d739f7cf",
+      "ranges": [
+        {
+          "start": 20,
+          "end": 172
+        }
+      ]
+    },
+    {
+      "id": "q-whats-a-minimum-viable-evaluation-setup",
+      "ordinal": 3,
+      "priority": "deep",
+      "sha256": "01652e18eda0f50a5d8882db5d87b6826857f02e6b2ece4b338266880706e21c",
+      "ranges": [
+        {
+          "start": 45,
+          "end": 91
+        }
+      ]
+    },
+    {
+      "id": "q-how-much-of-my-development-budget-should-i-allocate-to-evals",
+      "ordinal": 4,
+      "priority": "skim",
+      "sha256": "71258a58087df73d2eecd51df45c75fcc5a71fd100fe9dcaa30ae6346ce96329",
+      "ranges": [
+        {
+          "start": 484,
+          "end": 563
+        }
+      ]
+    },
+    {
+      "id": "q-will-these-evaluation-methods-still-be-relevant-in-5-10-years-given-how-fast-ai-is-changing",
+      "ordinal": 5,
+      "priority": "reference",
+      "sha256": "14b0f09f20f883a4b003ac93b01477b2966147d84d07b29ed1b025ecc317e9bf",
+      "ranges": [
+        {
+          "start": 103,
+          "end": 188
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-make-the-case-for-investing-in-evaluations-to-my-team",
+      "ordinal": 6,
+      "priority": "skim",
+      "sha256": "7439711a3c8b6a26e71612c8a1dede00bc7889423f8c6274aa0858e9729d5e39",
+      "ranges": [
+        {
+          "start": 67,
+          "end": 166
+        }
+      ]
+    },
+    {
+      "id": "q-why-is-error-analysis-so-important-in-llm-evals-and-how-is-it-performed",
+      "ordinal": 7,
+      "priority": "deep",
+      "sha256": "033063eddeafaed60ab88f3b80980143fbaace9dec90f59dd291d2ebb5d5d4f3",
+      "ranges": [
+        {
+          "start": 134,
+          "end": 205
+        },
+        {
+          "start": 1130,
+          "end": 1178
+        },
+        {
+          "start": 1636,
+          "end": 1703
+        }
+      ]
+    },
+    {
+      "id": "q-do-i-need-a-reference-answer-before-annotating-data",
+      "ordinal": 8,
+      "priority": "deep",
+      "sha256": "5d44443e99a62be34527bee65c0040a584d2646788293cd422b1417fe6e3a794",
+      "ranges": [
+        {
+          "start": 426,
+          "end": 524
+        },
+        {
+          "start": 627,
+          "end": 704
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-record-problems-that-arent-the-models-fault",
+      "ordinal": 9,
+      "priority": "skim",
+      "sha256": "d3962e77e69502c8fb0931a69383e6a35ad1371432378900698cb96bd89b1ec9",
+      "ranges": [
+        {
+          "start": 64,
+          "end": 148
+        }
+      ]
+    },
+    {
+      "id": "q-how-many-examples-do-i-need-for-an-eval",
+      "ordinal": 10,
+      "priority": "deep",
+      "sha256": "52b23596c0f8048c74816baf70a08128faf2d3f2533054d3b2aff5869884969c",
+      "ranges": [
+        {
+          "start": 44,
+          "end": 122
+        },
+        {
+          "start": 2699,
+          "end": 2799
+        },
+        {
+          "start": 4477,
+          "end": 4512
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-surface-problematic-traces-for-review-beyond-user-feedback",
+      "ordinal": 11,
+      "priority": "skim",
+      "sha256": "5118b0a0e487a436ad494ca4bde6de948e2792b65c10d0f93f933e09371cccbf",
+      "ranges": [
+        {
+          "start": 842,
+          "end": 971
+        }
+      ]
+    },
+    {
+      "id": "q-how-often-should-i-re-run-error-analysis-on-my-production-system",
+      "ordinal": 12,
+      "priority": "skim",
+      "sha256": "f240db693812016728f3c6be0868d0972df928c18aa5b2037d75384cf04e600c",
+      "ranges": [
+        {
+          "start": 776,
+          "end": 847
+        }
+      ]
+    },
+    {
+      "id": "q-what-should-i-do-when-my-gold-eval-dataset-becomes-stale",
+      "ordinal": 13,
+      "priority": "deep",
+      "sha256": "ec7b754febdbb5cea67148a4c007940be01739fb25aa8118e118210c8448eed1",
+      "ranges": [
+        {
+          "start": 754,
+          "end": 846
+        }
+      ]
+    },
+    {
+      "id": "q-what-is-the-best-approach-for-generating-synthetic-data",
+      "ordinal": 14,
+      "priority": "skim",
+      "sha256": "f083838d83fed60567773288fb012647e4c0ba53ea6423a7c4d9e4ea54d55806",
+      "ranges": [
+        {
+          "start": 596,
+          "end": 665
+        },
+        {
+          "start": 1473,
+          "end": 1503
+        }
+      ]
+    },
+    {
+      "id": "q-are-there-scenarios-where-synthetic-data-may-not-be-reliable",
+      "ordinal": 15,
+      "priority": "skim",
+      "sha256": "486d6ea96fba27341c763e323f620125ca1dac0cd486057de30c00321cb52d5a",
+      "ranges": [
+        {
+          "start": 70,
+          "end": 112
+        }
+      ]
+    },
+    {
+      "id": "q-how-can-i-do-error-analysis-when-production-traces-contain-sensitive-data",
+      "ordinal": 16,
+      "priority": "skim",
+      "sha256": "117a42f0b1fc91cae7790e8fa9071fba8a15fbb4bcbdc4085b133165c156353f",
+      "ranges": [
+        {
+          "start": 1569,
+          "end": 1635
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-approach-evaluation-when-my-system-handles-diverse-user-queries",
+      "ordinal": 17,
+      "priority": "skim",
+      "sha256": "13ee4e16fb9ae01ef4f0a744a0373011082d70bdb1a1caba6c11aee8580cb76c",
+      "ranges": [
+        {
+          "start": 1047,
+          "end": 1136
+        }
+      ]
+    },
+    {
+      "id": "q-how-can-i-efficiently-sample-production-traces-for-review",
+      "ordinal": 18,
+      "priority": "deep",
+      "sha256": "50e472ab3aa1983e86898340a4bb2ce1ccd35c4757b20991c6cd06514fb664f8",
+      "ranges": [
+        {
+          "start": 1090,
+          "end": 1129
+        },
+        {
+          "start": 1256,
+          "end": 1300
+        }
+      ]
+    },
+    {
+      "id": "q-why-do-you-recommend-binary-passfail-evaluations-instead-of-1-5-ratings-likert-scales",
+      "ordinal": 19,
+      "priority": "deep",
+      "sha256": "95d622e02030e776e080a3e57d4a6323c8e432a30855ea886e97838e34115df6",
+      "ranges": [
+        {
+          "start": 334,
+          "end": 405
+        },
+        {
+          "start": 964,
+          "end": 1062
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-combine-my-evals-into-a-single-metric",
+      "ordinal": 20,
+      "priority": "skim",
+      "sha256": "623e7b2da20ded5e81147324df46e5cc32509e4e37727c0bba3c0affb9dbbb77",
+      "ranges": [
+        {
+          "start": 325,
+          "end": 373
+        },
+        {
+          "start": 1072,
+          "end": 1176
+        }
+      ]
+    },
+    {
+      "id": "q-what-does-a-good-eval-dashboard-look-like",
+      "ordinal": 21,
+      "priority": "skim",
+      "sha256": "7e810151686d8409070d6c7b63d06040da2af8ce6d8daecdd2dd33e872bec4ed",
+      "ranges": [
+        {
+          "start": 229,
+          "end": 334
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-practice-eval-driven-development",
+      "ordinal": 22,
+      "priority": "skim",
+      "sha256": "a80e76f6d80c78a8ec027f1371de8804cb114413826b4f3637120f1d10c5fc55",
+      "ranges": [
+        {
+          "start": 403,
+          "end": 468
+        },
+        {
+          "start": 612,
+          "end": 717
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-build-automated-evaluators-for-every-failure-mode-i-find",
+      "ordinal": 23,
+      "priority": "deep",
+      "sha256": "a15e421bfde8755e72a0e90d1c212308404c1516d05f811ed86871cf6507e3fb",
+      "ranges": [
+        {
+          "start": 777,
+          "end": 851
+        },
+        {
+          "start": 987,
+          "end": 1096
+        }
+      ]
+    },
+    {
+      "id": "q-what-model-or-llm-should-i-use-to-build-automated-evals",
+      "ordinal": 24,
+      "priority": "skim",
+      "sha256": "2ff5591b52d37ea6b0f0c8cc67828b889aa177fa04c171d9a5a2f8558636512b",
+      "ranges": [
+        {
+          "start": 60,
+          "end": 128
+        },
+        {
+          "start": 1749,
+          "end": 1806
+        }
+      ]
+    },
+    {
+      "id": "q-can-i-use-jev-for-evals",
+      "ordinal": 25,
+      "priority": "reference",
+      "sha256": "d397e6c58cf8db2a95081cc4b056e4d1defae1fc8c23fdd625d4299becaee6d5",
+      "ranges": [
+        {
+          "start": 1070,
+          "end": 1114
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-know-if-i-can-trust-my-automated-eval",
+      "ordinal": 26,
+      "priority": "deep",
+      "sha256": "9a2d6308e2da3936d66faafedd419e67e6522411b3582cd317229271bc130aeb",
+      "ranges": [
+        {
+          "start": 962,
+          "end": 1029
+        },
+        {
+          "start": 2000,
+          "end": 2036
+        },
+        {
+          "start": 2602,
+          "end": 2639
+        }
+      ]
+    },
+    {
+      "id": "q-what-should-i-do-when-i-cant-get-my-llm-judge-to-agree-with-human-reviewers",
+      "ordinal": 27,
+      "priority": "deep",
+      "sha256": "49d3624c2f5e38c1107ad497419a1049ad8b84f9dd981d2482a67b0856c1ac9f",
+      "ranges": [
+        {
+          "start": 726,
+          "end": 801
+        },
+        {
+          "start": 1192,
+          "end": 1256
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-use-ready-to-use-evaluation-metrics",
+      "ordinal": 28,
+      "priority": "deep",
+      "sha256": "4fb26f448c4e06d873c1fb4776c1605b4228a637a79bc32d597590918e4391aa",
+      "ranges": [
+        {
+          "start": 55,
+          "end": 152
+        },
+        {
+          "start": 162,
+          "end": 209
+        }
+      ]
+    },
+    {
+      "id": "q-are-similarity-metrics-bertscore-rouge-etc-useful-for-evaluating-llm-outputs",
+      "ordinal": 29,
+      "priority": "deep",
+      "sha256": "98f1db3c2eb892c1ff314c9b1a2b45d4368e8118abc065fbe0b44d4b92b23a46",
+      "ranges": [
+        {
+          "start": 863,
+          "end": 904
+        },
+        {
+          "start": 905,
+          "end": 964
+        }
+      ]
+    },
+    {
+      "id": "q-can-i-use-the-same-model-for-both-the-main-task-and-evaluation",
+      "ordinal": 30,
+      "priority": "skim",
+      "sha256": "07ea44e0149f490e0473c9ab7a41b70ddb22534237e9c7a92d986d1649626616",
+      "ranges": [
+        {
+          "start": 294,
+          "end": 369
+        }
+      ]
+    },
+    {
+      "id": "q-how-much-of-a-trace-should-i-give-an-llm-judge",
+      "ordinal": 31,
+      "priority": "deep",
+      "sha256": "1b3a294c37c3584267e25733ee4ff5297a74913f82918469c6d9619984354361",
+      "ranges": [
+        {
+          "start": 47,
+          "end": 121
+        },
+        {
+          "start": 504,
+          "end": 581
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-we-evaluate-a-models-ability-to-express-uncertainty-or-know-what-it-doesnt-know",
+      "ordinal": 32,
+      "priority": "deep",
+      "sha256": "9cd883be5b380bc83010c881cf0f50a04466643a35764c590d3fa70e619c19cd",
+      "ranges": [
+        {
+          "start": 266,
+          "end": 394
+        }
+      ]
+    },
+    {
+      "id": "q-how-many-people-should-annotate-my-llm-outputs",
+      "ordinal": 33,
+      "priority": "skim",
+      "sha256": "842ca0c15535aabfeacfec7cf6bc0938c56abf0b667280a9b7230ae11c354b3b",
+      "ranges": [
+        {
+          "start": 1162,
+          "end": 1241
+        }
+      ]
+    },
+    {
+      "id": "q-what-if-human-reviewers-approve-ai-outputs-without-checking-them-carefully",
+      "ordinal": 34,
+      "priority": "skim",
+      "sha256": "4043543c5e3664400a66f0cc824cf1baed01c83d92990c28130863419ec8b850",
+      "ranges": [
+        {
+          "start": 368,
+          "end": 426
+        }
+      ]
+    },
+    {
+      "id": "q-should-product-managers-and-engineers-collaborate-on-error-analysis-how",
+      "ordinal": 35,
+      "priority": "skim",
+      "sha256": "a33fe92f766d1c2dc29bf0288bb180bfec5c35f073c5e898dbe5ac0661151721",
+      "ranges": [
+        {
+          "start": 452,
+          "end": 540
+        }
+      ]
+    },
+    {
+      "id": "q-can-i-help-with-evals-if-im-not-a-domain-expert",
+      "ordinal": 36,
+      "priority": "reference",
+      "sha256": "8a304a10f92689316ae074a1ed68e937ec5d2eed6e254df8aaf7ab35543fd46d",
+      "ranges": [
+        {
+          "start": 1191,
+          "end": 1270
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-evaluate-outputs-in-a-language-i-dont-speak",
+      "ordinal": 37,
+      "priority": "reference",
+      "sha256": "cc56593b3bf7d6db3967124ebe6665f53403d33032048ebfb54736bf3e74739d",
+      "ranges": [
+        {
+          "start": 518,
+          "end": 612
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-outsource-annotation-and-labeling-to-a-third-party",
+      "ordinal": 38,
+      "priority": "reference",
+      "sha256": "b52217481dff516a5ad7169a93010f48bf1531ba9e730efed95bd8b84b65392b",
+      "ranges": [
+        {
+          "start": 390,
+          "end": 497
+        }
+      ]
+    },
+    {
+      "id": "q-what-if-the-source-material-is-too-large-for-a-person-to-review",
+      "ordinal": 39,
+      "priority": "skim",
+      "sha256": "ebd5e224f444e9ed5a37708b71e556729fdc82d5961cdd0185f3375d609e720b",
+      "ranges": [
+        {
+          "start": 147,
+          "end": 208
+        },
+        {
+          "start": 661,
+          "end": 776
+        }
+      ]
+    },
+    {
+      "id": "q-what-parts-of-evals-can-be-automated-with-llms",
+      "ordinal": 40,
+      "priority": "deep",
+      "sha256": "729d247945dd612e99ea39d2b8d6e6567e7592e6ead2e9e25a78ad8e28101656",
+      "ranges": [
+        {
+          "start": 2380,
+          "end": 2471
+        },
+        {
+          "start": 2843,
+          "end": 2911
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-stop-writing-prompts-manually-in-favor-of-automated-tools",
+      "ordinal": 41,
+      "priority": "skim",
+      "sha256": "59831cd4cc0b241674249988a5c4267a12315e595249eea7e7959cf4d54b5f0c",
+      "ranges": [
+        {
+          "start": 620,
+          "end": 712
+        }
+      ]
+    },
+    {
+      "id": "q-should-i-build-a-custom-annotation-tool-or-use-something-off-the-shelf",
+      "ordinal": 42,
+      "priority": "skim",
+      "sha256": "883a7cabdae6a38393a14766c8f6ee9ba663a426bec7fa8e07b3435cc0033cdb",
+      "ranges": [
+        {
+          "start": 404,
+          "end": 465
+        }
+      ]
+    },
+    {
+      "id": "q-what-makes-a-good-custom-interface-for-reviewing-llm-outputs",
+      "ordinal": 43,
+      "priority": "skim",
+      "sha256": "43f2fb1d43183f1001bc3b793f3eaba0d6945b6e05fd288fa8375c8772749f44",
+      "ranges": [
+        {
+          "start": 2705,
+          "end": 2826
+        }
+      ]
+    },
+    {
+      "id": "q-what-gaps-in-eval-tooling-should-i-be-prepared-to-fill-myself",
+      "ordinal": 44,
+      "priority": "reference",
+      "sha256": "808c64460c53ea81214ab714a533b5e127ce3c359e1350322a336e0d5b9f07c9",
+      "ranges": [
+        {
+          "start": 2918,
+          "end": 2971
+        }
+      ]
+    },
+    {
+      "id": "q-what-should-an-internal-eval-platform-standardize-across-teams",
+      "ordinal": 45,
+      "priority": "skim",
+      "sha256": "101d348c14e71ddc2e2ce164e44f07d471d80dfd9a0f297761ae0b30ed313cc0",
+      "ranges": [
+        {
+          "start": 545,
+          "end": 645
+        }
+      ]
+    },
+    {
+      "id": "q-whats-your-favorite-eval-vendor",
+      "ordinal": 46,
+      "priority": "reference",
+      "sha256": "9795c990cc1e27c302571123b5b6a6c51298c4825fa3730f72f43ae1952a94e8",
+      "ranges": [
+        {
+          "start": 564,
+          "end": 590
+        }
+      ]
+    },
+    {
+      "id": "q-how-should-i-version-and-manage-prompts",
+      "ordinal": 47,
+      "priority": "skim",
+      "sha256": "fa74d2b13917dfd93f086e035a96b84188e2446fda4bf1473ec0fbf7b5c9fc96",
+      "ranges": [
+        {
+          "start": 278,
+          "end": 349
+        }
+      ]
+    },
+    {
+      "id": "q-what-should-go-in-the-system-prompt-vs-the-user-prompt",
+      "ordinal": 48,
+      "priority": "reference",
+      "sha256": "34601aa19a445fb54ca503b756f354c21d8e68a53397c0c09bef726d8a4105b6",
+      "ranges": [
+        {
+          "start": 91,
+          "end": 171
+        }
+      ]
+    },
+    {
+      "id": "q-how-are-evaluations-used-differently-in-cicd-vs-monitoring-production",
+      "ordinal": 49,
+      "priority": "deep",
+      "sha256": "fd8a0c96d3cbf7b0a87b90de5e53fa019b64bbbe9df6a0f4a84dbb688c2fd891",
+      "ranges": [
+        {
+          "start": 76,
+          "end": 137
+        },
+        {
+          "start": 1186,
+          "end": 1233
+        }
+      ]
+    },
+    {
+      "id": "q-how-often-should-i-run-my-evals",
+      "ordinal": 50,
+      "priority": "skim",
+      "sha256": "a5bc7ae3e179b41f94d252f07c983b89814a4af6bc4ff7868f983fb15867dafb",
+      "ranges": [
+        {
+          "start": 1014,
+          "end": 1045
+        },
+        {
+          "start": 1046,
+          "end": 1119
+        }
+      ]
+    },
+    {
+      "id": "q-whats-the-difference-between-guardrails-evaluators",
+      "ordinal": 51,
+      "priority": "skim",
+      "sha256": "8241b457e936a2ab614591bb237135e8005b70784c0fa9bbd277a13b9cc9fa28",
+      "ranges": [
+        {
+          "start": 58,
+          "end": 141
+        },
+        {
+          "start": 1139,
+          "end": 1192
+        }
+      ]
+    },
+    {
+      "id": "q-can-my-evaluators-also-be-used-to-automatically-fix-or-correct-outputs-in-production",
+      "ordinal": 52,
+      "priority": "reference",
+      "sha256": "5f70c92770398e9ebfd7658c1149202d2daef064fb67624530889f8867d3b3d2",
+      "ranges": [
+        {
+          "start": 672,
+          "end": 788
+        }
+      ]
+    },
+    {
+      "id": "q-how-much-time-should-i-spend-on-model-selection",
+      "ordinal": 53,
+      "priority": "skim",
+      "sha256": "648e51255120cc83854ca83ab2fd796abad9a90cd340d4735afbeb2ddbcab06e",
+      "ranges": [
+        {
+          "start": 148,
+          "end": 242
+        }
+      ]
+    },
+    {
+      "id": "q-is-rag-dead",
+      "ordinal": 54,
+      "priority": "skim",
+      "sha256": "636388f2c733c8c5a741cc00f2f7f97cf71f1865213dde6fb84bdc9d54de55c0",
+      "ranges": [
+        {
+          "start": 855,
+          "end": 932
+        }
+      ]
+    },
+    {
+      "id": "q-how-should-i-evaluate-a-coding-agent",
+      "ordinal": 55,
+      "priority": "skim",
+      "sha256": "cb177b61f62fba942bc49c3a33a5e09c356d16293f3224cc8310819464d01c9c",
+      "ranges": [
+        {
+          "start": 594,
+          "end": 712
+        }
+      ]
+    },
+    {
+      "id": "q-how-should-i-approach-evaluating-my-rag-system",
+      "ordinal": 56,
+      "priority": "deep",
+      "sha256": "e5e8e3d122b811f102a935d7584b9b59ed9522b628fd3a85b2bcb125e32022f5",
+      "ranges": [
+        {
+          "start": 51,
+          "end": 163
+        },
+        {
+          "start": 196,
+          "end": 240
+        },
+        {
+          "start": 1107,
+          "end": 1193
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-choose-the-right-chunk-size-for-my-document-processing-tasks",
+      "ordinal": 57,
+      "priority": "skim",
+      "sha256": "3787d102c994980f7bcdd8e330100ae9381514024064388091be954dea71065d",
+      "ranges": [
+        {
+          "start": 74,
+          "end": 187
+        },
+        {
+          "start": 2731,
+          "end": 2778
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-debug-multi-turn-conversation-traces",
+      "ordinal": 58,
+      "priority": "deep",
+      "sha256": "9ca5b8da7519fa0dba8fe1a32fb2f420b9776fdd287c6aa69d249d375662d89b",
+      "ranges": [
+        {
+          "start": 64,
+          "end": 142
+        },
+        {
+          "start": 677,
+          "end": 731
+        },
+        {
+          "start": 1016,
+          "end": 1066
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-evaluate-sessions-with-human-handoffs",
+      "ordinal": 59,
+      "priority": "reference",
+      "sha256": "1d3907080848d2fdbc79843a4dd9a73d96d4aa67d2d37702c7d8cf07f1239254",
+      "ranges": [
+        {
+          "start": 127,
+          "end": 235
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-evaluate-complex-multi-step-workflows",
+      "ordinal": 60,
+      "priority": "skim",
+      "sha256": "4d4de69949e9fc7b5fc2df91c20770d8e0ca117cc39116d6d3e8410b9c2ff1b6",
+      "ranges": [
+        {
+          "start": 268,
+          "end": 305
+        },
+        {
+          "start": 797,
+          "end": 874
+        }
+      ]
+    },
+    {
+      "id": "q-how-do-i-evaluate-agentic-workflows",
+      "ordinal": 61,
+      "priority": "deep",
+      "sha256": "4311220f12d456433e4aad65256fe049d62d90eeed7136700dddb0e31bce9907",
+      "ranges": [
+        {
+          "start": 100,
+          "end": 124
+        },
+        {
+          "start": 1023,
+          "end": 1101
+        },
+        {
+          "start": 1364,
+          "end": 1406
+        }
+      ]
+    }
+  ]
+}
