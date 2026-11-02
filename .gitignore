@@ -1,0 +1,27 @@
+# Personal source downloads and generated full-article copies.
+private/
+originals/
+annotated/
+evals-faq.html
+evals-faq.htm
+evals-faq.pdf
+*.original.pdf
+*.original.html
+*.original.htm
+*.annotated.pdf
+*.annotated.html
+*.highlighted.pdf
+*.highlighted.html
+*-highlighted.pdf
+*-highlighted.html
+
+# Local Python caches and environments.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary downloads and generation files.
+.source-download-*.pdf
+.annotated-*.pdf
+*.tmp
