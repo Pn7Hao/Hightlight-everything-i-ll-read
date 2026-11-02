@@ -70,3 +70,26 @@ python tools/build_kit.py
 
 Lệnh chỉ cần thư viện chuẩn Python, ghép template, manifest và mã JavaScript đã có trong repo thành một file HTML. Thư viện PDF cho trình duyệt được kèm sẵn tại `vendor/pdf-lib.min.js`; thông báo giấy phép của thư viện ở [vendor/pdf-lib.LICENSE.md](vendor/pdf-lib.LICENSE.md).
 
+
+## Review fixes and regression checks
+
+Imported HTML is sanitized with vendored DOMPurify (license included). Fragment
+links remain in the preview/saved document, saved toggle buttons update their
+accessible state, and the bundler reads every text input explicitly as UTF-8.
+Browser “Webpage, Complete” exports requiring a companion `*_files` directory
+are rejected with instructions to use the original HTML download instead;
+companion-directory import is not implemented.
+
+Run local checks from the repository root:
+
+```sh
+npm ci
+npm test
+python -m unittest discover -s tests -p 'test_*.py'
+python readings/hamel-evals-faq/tools/build_kit.py
+```
+
+The regression suite uses jsdom, not a complete browser. Full Chromium QA was
+unavailable in the review execution environment. These checks are not a general
+security certification for arbitrary untrusted HTML. HTML rendering may still
+fetch publisher styles, fonts, and images as described above.

@@ -46,6 +46,7 @@
   <footer><span>Nguồn: hamel.dev · Bản tọa độ đối chiếu ngày 02/11/2026</span><span>Vàng: đọc kỹ · Xanh: đọc lướt · Xám tím: tra cứu</span></footer>
 </main>
 <script>__PDF_LIB__</script>
+<script>__DOMPURIFY__</script>
 <script>
 'use strict';
 const HTML_MANIFEST = __HTML_MANIFEST__;
@@ -93,18 +94,42 @@ byId('make-pdf').addEventListener('click',async()=>{
 });
 
 function cleanHTML(source){
+  // Parse inertly, then sanitize before anything enters the same-origin preview.
   const doc=new DOMParser().parseFromString(source,'text/html');
-  doc.querySelectorAll('script,base,meta[http-equiv="refresh"],object,embed,form,link.quarto-color-alternate').forEach(n=>n.remove());
-  doc.querySelectorAll('*').forEach(n=>{for(const a of [...n.attributes]){if(/^on/i.test(a.name)||((a.name==='href'||a.name==='src')&&/^javascript:/i.test(a.value)))n.removeAttribute(a.name);}});
-  const base=doc.createElement('base');base.href=HTML_MANIFEST.sourceUrl;doc.head.prepend(base);
-  doc.body.classList.remove('quarto-dark');doc.body.classList.add('quarto-light');
-  doc.querySelectorAll('iframe').forEach(n=>{const a=doc.createElement('a');a.href=new URL(n.getAttribute('src')||'',base.href).href;a.textContent=n.title||'Mở nội dung nhúng';a.target='_blank';a.rel='noopener noreferrer';n.replaceWith(a);});
-  return '<!doctype html>\n'+doc.documentElement.outerHTML;
+  // Browser "Webpage, Complete" exports refer to files we have not received.
+  // Reject rather than silently resolving those paths against the publisher.
+  const companionPath=/(?:^|[\/])[^\/?#]+_files[\/]/i;
+  for(const n of doc.querySelectorAll('[href],[src],[srcset],[poster],[style],style')){
+    const values=[...n.attributes].filter(a=>['href','src','srcset','poster','style'].includes(a.name)).map(a=>a.value);
+    if(n.localName==='style')values.push(n.textContent);
+    if(values.some(value=>{try{return companionPath.test(decodeURIComponent(value));}catch(_){return companionPath.test(value);}}))
+      throw new Error('Bản Webpage, Complete cần thư mục *_files đi kèm. Hãy tải HTML nguyên bản bằng lệnh curl bên trên rồi chọn lại file.');
+  }
+  doc.querySelectorAll('iframe').forEach(n=>{
+    const a=doc.createElement('a');a.setAttribute('href',n.getAttribute('src')||'');
+    a.textContent=n.title||'Mở nội dung nhúng';n.replaceWith(a);
+  });
+  doc.querySelectorAll('link.quarto-color-alternate').forEach(n=>n.remove());
+  // DOMPurify handles normalized URLs, SVG namespaces, event handlers and
+  // malformed markup. No regex-only XSS filter and no imported executable code.
+  const safe=DOMPurify.sanitize(doc.documentElement.outerHTML,{
+    WHOLE_DOCUMENT:true, ADD_TAGS:['link'],
+    FORBID_TAGS:['script','base','meta','object','embed','form','iframe'],
+    FORBID_ATTR:['srcdoc'],
+    ALLOWED_URI_REGEXP:/^(?:(?:https?|mailto|tel):|[^a-z]|[a-z+\-.]+(?:[^a-z+\-.:]|$))/i
+  });
+  const clean=new DOMParser().parseFromString(safe,'text/html');
+  const base=clean.createElement('base');base.href=HTML_MANIFEST.sourceUrl;clean.head.prepend(base);
+  const charset=clean.createElement('meta');charset.setAttribute('charset','utf-8');clean.head.prepend(charset);
+  clean.body.classList.remove('quarto-dark');clean.body.classList.add('quarto-light');
+  clean.querySelectorAll('a[href]').forEach(a=>{if(!a.getAttribute('href').startsWith('#')){a.target='_blank';a.rel='noopener noreferrer';}});
+  return '<!doctype html>\n'+clean.documentElement.outerHTML;
 }
 async function openHTML(source){
   if(source.length>30*1024*1024)throw new Error('File HTML vượt 30 MB. Hãy lấy HTML bằng lệnh curl bên trên.');
+  const cleaned=cleanHTML(source);
   const frame=byId('article-frame');byId('preview').style.display='block';
-  await new Promise(resolve=>{frame.onload=resolve;frame.srcdoc=cleanHTML(source);});
+  await new Promise(resolve=>{frame.onload=resolve;frame.srcdoc=cleaned;});
   const script=frame.contentDocument.createElement('script');script.textContent=OVERLAY_SOURCE;frame.contentDocument.body.appendChild(script);
   const report=await frame.contentWindow.applyReadingHighlights(HTML_MANIFEST,{cssText:OVERLAY_CSS,sourceUrl:HTML_MANIFEST.sourceUrl,filename:'hamel-evals-faq-highlighted.html'});
   if(!report.matched)throw new Error('Không có mục nào khớp. Hãy kiểm tra bạn đã chọn HTML của bài Evals FAQ.');

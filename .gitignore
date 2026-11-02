@@ -25,3 +25,6 @@ venv/
 .source-download-*.pdf
 .annotated-*.pdf
 *.tmp
+
+# JavaScript regression dependencies.
+node_modules/

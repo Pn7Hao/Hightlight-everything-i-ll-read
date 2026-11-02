@@ -10,8 +10,8 @@ def js_json(value):
     return json.dumps(value, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 
 def build():
-    html_manifest = json.loads((ROOT / "data/html-annotations.json").read_text())
-    pdf_manifest = json.loads((ROOT / "data/pdf-annotations.json").read_text())
+    html_manifest = json.loads((ROOT / "data/html-annotations.json").read_text(encoding="utf-8"))
+    pdf_manifest = json.loads((ROOT / "data/pdf-annotations.json").read_text(encoding="utf-8"))
     labels = {7: "Phân tích lỗi", 10: "Chọn dữ liệu", 26: "Kiểm định judge", 56: "RAG", 61: "Agent", 49: "CI / production"}
     html_manifest["readingRoute"] = [
         {"id": next(s["id"] for s in html_manifest["sections"] if s["ordinal"] == n), "label": f"#{n:02d} {label}"}
@@ -23,13 +23,14 @@ def build():
     )
     values = {
         "__ROUTE_LINKS__": route_links,
-        "__PDF_LIB__": (ROOT / "vendor/pdf-lib.min.js").read_text().replace("</script", "<\\/script"),
+        "__DOMPURIFY__": (ROOT / "vendor/purify.min.js").read_text(encoding="utf-8").replace("</script", "<\\/script"),
+        "__PDF_LIB__": (ROOT / "vendor/pdf-lib.min.js").read_text(encoding="utf-8").replace("</script", "<\\/script"),
         "__HTML_MANIFEST__": js_json(html_manifest),
         "__PDF_MANIFEST__": js_json(pdf_manifest),
-        "__ANNOTATOR_JS_STRING__": js_json((ROOT / "tools/annotator.js").read_text()),
-        "__READER_CSS_STRING__": js_json((ROOT / "tools/reader.css").read_text()),
+        "__ANNOTATOR_JS_STRING__": js_json((ROOT / "tools/annotator.js").read_text(encoding="utf-8")),
+        "__READER_CSS_STRING__": js_json((ROOT / "tools/reader.css").read_text(encoding="utf-8")),
     }
-    output = (ROOT / "tools/reader-template.html").read_text()
+    output = (ROOT / "tools/reader-template.html").read_text(encoding="utf-8")
     for key, value in values.items():
         output = output.replace(key, value)
     target = ROOT / "hamel-evals-reading-kit.html"

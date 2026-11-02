@@ -149,9 +149,24 @@
   function button(id, label, handler) {
     const node = element('button', 'reader-button', label);
     node.id = id; node.type = 'button';
+    if (id.startsWith('reader-toggle-')) node.setAttribute('aria-pressed', 'false');
     node.addEventListener('click', handler);
     return node;
   }
+
+  // A publisher <base> is needed for assets, but fragment clicks stay here.
+  function keepLocalFragments(event) {
+    const link = event.target.closest?.('a[href]');
+    const href = link?.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+    event.preventDefault();
+    let id;
+    try { id = decodeURIComponent(href.slice(1)); } catch (_) { return; }
+    const target = document.getElementById(id) || document.getElementsByName(id)[0];
+    if (target) target.scrollIntoView({block: 'start'});
+    else if (!id) window.scrollTo(0, 0);
+  }
+  document.addEventListener('click', keepLocalFragments);
 
   function makeToolbar(manifest, report) {
     const toolbar = element('aside', 'reader-owned reader-toolbar');
@@ -380,9 +395,9 @@
       ? `Bản đã lưu; ${failed.size} tài nguyên vẫn cần mạng.`
       : 'Bản đã lưu để đọc offline. Highlight và nhãn ưu tiên là ghi chú biên tập.';
     const script = element('script');
-    script.textContent = `document.getElementById('reader-print')?.addEventListener('click',()=>window.print());
-document.getElementById('reader-toggle-highlights')?.addEventListener('click',e=>{const h=document.documentElement.classList.toggle('reader-highlights-hidden');e.currentTarget.textContent=h?'Hiện highlight':'Ẩn highlight';});
-document.getElementById('reader-toggle-notes')?.addEventListener('click',e=>{const h=document.documentElement.classList.toggle('reader-notes-hidden');e.currentTarget.textContent=h?'Hiện nhãn ưu tiên':'Ẩn nhãn ưu tiên';});`;
+    script.textContent = `document.addEventListener('click', ${keepLocalFragments.toString()});\ndocument.getElementById('reader-print')?.addEventListener('click',()=>window.print());
+document.getElementById('reader-toggle-highlights')?.addEventListener('click',e=>{const h=document.documentElement.classList.toggle('reader-highlights-hidden');e.currentTarget.textContent=h?'Hiện highlight':'Ẩn highlight';e.currentTarget.setAttribute('aria-pressed',String(h));});
+document.getElementById('reader-toggle-notes')?.addEventListener('click',e=>{const h=document.documentElement.classList.toggle('reader-notes-hidden');e.currentTarget.textContent=h?'Hiện nhãn ưu tiên':'Ẩn nhãn ưu tiên';e.currentTarget.setAttribute('aria-pressed',String(h));});`;
     copy.querySelector('body').appendChild(script);
     return {html: '<!DOCTYPE html>\n' + copy.outerHTML, failed: [...failed]};
   }
